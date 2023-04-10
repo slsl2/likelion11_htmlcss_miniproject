@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Brush+Script&family=Yeon+Sung&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Yeon Sung', cursive;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+header {
+    height: 40px;
+    background-color: #333;
+}
+
+main {
+    height: 600px;
+    width: 750px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+
+#top {
+    height: 35px;
+    background-color: rgb(246, 157, 172);
+    margin-bottom: 25px;
+    border-radius: 0 0 10px 10px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+}
+
+#container {
+    height: 410px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+aside {
+    height: 110px;
+    background-color: #f8f8f8;
+    margin: 0 15px 60px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+section {
+    height: 45%;
+    width: 30%;
+    background-color: white;
+    border-radius: 7px;
+    color: #626262;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+}
+
+@keyframes ani-hover {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(0, -10px);
+  }
+}
+
+@keyframes ani-back {
+  0% {
+      transform: translate(0, -10px);
+  }
+  100% {
+      transform: translate(0, 0);
+  }
+}
+
+section:hover {
+    animation: ani-hover 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+section:not(:hover) {
+    animation: ani-back 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.black_cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+section p {
+    position: relative;
+}
+
+.section_title {
+    color: rgb(246, 157, 172);
+    font-size: 22px;
+}
+
+#mbti_section {
+    position: relative;
+    background: url("isfj배경.png") no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#movie_section {
+    background: url("영화배경.jpg") no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#animal_section {
+    background: url("강아지배경.jpg") no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#team {
+    width: 470px;
+    height: 100%;
+    background-color: #26898c;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+}
+
+#hi {
+    width: 230px;
+    height: 100%;
+    background-color: rgb(246, 157, 172);
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+}
+
+footer {
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #adadad;
+}
+
+a:hover {
+    background-color: rgb(246, 157, 172);
+}
+
+#alert {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    #alert {
+        display: block;
+        font-size: 30px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333;
+    }
+    #all {
+        display: none;
+    }
+}
